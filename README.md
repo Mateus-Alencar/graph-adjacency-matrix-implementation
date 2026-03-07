@@ -7,7 +7,7 @@ graph-adjacency-matrix-implementation
 ├── src/
 │   └── grafo.py
 ├── examples/
-│   └── exemplo_grafo.py
+│   └── 
 └── README.md
 
 ## Conceitos
@@ -15,7 +15,6 @@ graph-adjacency-matrix-implementation
 Um **Grafo** é uma estruta de dados compostas por: **Vértices**(nós) e **Areas**(conexões).
 ```txt
 G = (V, E)
-
 ```
 
 Um **dígrafo** (grafo direcionado) possui arestas com direção.
@@ -32,29 +31,15 @@ C -> A
 
 A matriz de adjacência é uma forma de representar grafos utilizando uma matriz quadrada.
 
-Se um grafo possui N vértices, a matriz terá dimensão: `N x N`
+> Se um grafo possui N vértices, a matriz terá dimensão: `N x N`  
 
-Cada posição da matriz indica se existe conexão entre dois vértices.
+Grafo:
+![alt text](./images/Ex_Matriz_Adjacencias.png)
 
-Exemplo:
-Grafo com vértices: `
-```txt
-A, B, C
-```
-Conexões:
-```txt
-A — B
-A — C
-```
-Matriz de adjacência:
+`1 → existe aresta / 0 → não existe aresta`
 
-    A B C
-A [ 0 1 1 ]
-B [ 1 0 0 ]
-C [ 1 0 0 ]
-
-Onde:
-
-1 → existe aresta
-
-0 → não existe aresta
+### Matriz de incidência
+Grafo
+![alt text](./images/Ex_Matriz_Incidencia.png)
+Dígrafo
+![alt text](./images/Ex_Digrafo_Incidencia.png)
