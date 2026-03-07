@@ -77,5 +77,5 @@ Arestas: 6 1, 5 2, 2 3, 5 1, 3 5, 4 5, 2 6, 3 2, 1 6, 4 2, 2 2
 
 Grafo  
 ![alt text](./images/Ex_Matriz_Incidencia.png)  
-Dígrafo
+Dígrafo  
 ![alt text](./images/Ex_Digrafo_Incidencia.png)  
