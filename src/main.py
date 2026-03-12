@@ -62,6 +62,17 @@ V |
 
 
 
+def montarDigrafo(dicionario, vertices):
+    for origem, destino in vertices:
+        dicionario[origem].append(destino)
+    print(dicionario)
+    
+def montarGrafo(dicionario, vertices):
+    for origem, destino in vertices:
+        dicionario[origem].append(destino)
+        dicionario[destino].append(origem)
+    print(dicionario)
+
 print("--------------------------------------------------------------------")
 print("Implementação de matriz de adjacências para grafos e dígrafos.")
 arestas = input("Informe as arestas do grafo (origem destino,origem destino, ...): ")
@@ -80,5 +91,13 @@ if len(vertices) != 0:
             if num > maior_num:
                 maior_num = num
     print(maior_num)
+    print(vertices)
+    dicionario = {}
+    for x in range(1, maior_num + 1):
+        dicionario[x] = []
+    print(dicionario)
+    montarDigrafo(dicionario, vertices)
+    montarGrafo(dicionario, vertices)
+    
 else:
     print("Não existe arestas a serem analisadas")
